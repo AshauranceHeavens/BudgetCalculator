@@ -72,8 +72,7 @@ int main()
                         printf("Item: \n");
                         scanf("%s", list);
 
-                        //this while loop is not be executed for some reason, leading to an error
-                        //test();
+                        
                         int mini = 0;
                          if(list != NULL){
                                 for(v = 0; v < strlen(list); v++){
@@ -126,15 +125,14 @@ int main()
                             system("color 04");
                             printf("Error 2!\nA numeric value was entered.\n");
                             printf("Calculations cannot proceed.\n");
-                            //system("pause");
-                            //system("exit");
+                          
                             sandile = 1;
                         }
                         j++;
                         y++;
 
                         FILE * fpointer = fopen("budget file.txt", "a");
-                        //THERE SHOULD BE A CODE HERE THAT PRINTS SYSTEM TIME AND SYSTEM DATE TO THE FILE
+                       
 
                         fprintf(fpointer, "%s: R%.2f\n", list, atof(price2));
 
@@ -165,24 +163,13 @@ int main()
                         printf("With your current budget you will spend R%.2f ", usertotal);
                         printf("and be left with R%.2f \n", useravailable);
                     }else{
-                        //nothing
+                       
                     }
-               // }
-            //}else{
-                //system("color 04");
-                //printf("Error 3!\nA non numeric value was entered.\n");
-                //printf("Calculations cannot proceed.\n");
+             
             }else{
                 system("color 04");
                 printf("Error number Unknown: You entered a letter(s) instead of a number.\n");
             }
-        //}else{
-            //system("color 04");
-            //printf("Error 4!\nA non numeric value was entered.\n");
-            //printf("Calculations cannot proceed.\n");
-        //}
-
-
 
 
         break;
@@ -197,7 +184,7 @@ int main()
              while(fgets(filecont, 500, fpointer) != NULL){
                 printf("%s", filecont);
              }
-               //printf("%s", filecont);
+              
 
              fclose(fpointer);
 
